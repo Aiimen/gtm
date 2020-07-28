@@ -15,19 +15,19 @@ $(document).ready(() => {
     if (region.includes('uk/en')) {
         gtm = IDS['uk/en'];
     } else if (region.includes('se/en')) {
-        gtm = IDS = ['se/en']
+        gtm = IDS['se/en']
     } else if (region.includes('dk/en')) {
-        gtm = IDS = ['dk/en']
+        gtm = IDS['dk/en']
     } else if (region.includes('eu/en')) {
-        gtm = IDS = ['eu/en']
+        gtm = IDS['eu/en']
     } else if (region.includes('es/es')) {
-        gtm = IDS = ['es/es']
+        gtm = IDS['es/es']
     } else if (region.includes('fr/fr')) {
-        gtm = IDS = ['fr/fr']
+        gtm = IDS['fr/fr']
     } else if (region.includes('de/de')) {
-        gtm = IDS = ['de/de']
+        gtm = IDS['de/de']
     } else if (region.includes('it/it')) {
-        gtm = IDS = ['it/it']
+        gtm = IDS['it/it']
     }
 
 
