@@ -12,34 +12,24 @@ $(document).ready(() => {
         'de/de': "GTM-W88K7R"
     }
 
-    switch (region) {
-        case region.includes("uk/en"):
-            gtm = IDS['uk/en'];
-            break;
-        case region.includes("se/en"):
-            gtm = IDS['se/en'];
-            break;
-        case region.includes("dk/en"):
-            gtm = IDS['dk/en'];
-            break;
-        case region.includes("eu/en"):
-            gtm = IDS['eu/en'];
-            break;
-        case region.includes("es/es"):
-            gtm = IDS['es/es'];
-            break;
-        case region.includes("it/it"):
-            gtm = IDS['it/it'];
-            break;
-        case region.includes("fr/fr"):
-            gtm = IDS['de/de'];
-            break;
-        case region.includes("de/de"):
-            gtm = IDS['de/de'];
-            break;
-        default:
-            null
+    if (region.includes('uk/en')) {
+        gtm = IDS['uk/en'];
+    } else if (region.includes('se/en')) {
+        gtm = IDS = ['se/en']
+    } else if (region.includes('dk/en')) {
+        gtm = IDS = ['dk/en']
+    } else if (region.includes('eu/en')) {
+        gtm = IDS = ['eu/en']
+    } else if (region.includes('es/es')) {
+        gtm = IDS = ['es/es']
+    } else if (region.includes('fr/fr')) {
+        gtm = IDS = ['fr/fr']
+    } else if (region.includes('de/de')) {
+        gtm = IDS = ['de/de']
+    } else if (region.includes('it/it')) {
+        gtm = IDS = ['it/it']
     }
+
 
     $("body").prepend(`<iframe src="//www.googletagmanager.com/ns.html?id=${gtm}"
     height="0" width="0" style="display:none;visibility:hidden"></iframe>`);
